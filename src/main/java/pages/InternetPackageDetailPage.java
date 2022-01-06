@@ -15,10 +15,16 @@ public class InternetPackageDetailPage {
         this.wait = wait;
     }
 
+    public InternetPackagePage clickBackToPaketInternetButton() throws InterruptedException {
+        clickButtonByXpath(wait, "//a[contains(text(),'PAKET INTERNET')]");
+        Thread.sleep(2000);
+        return new InternetPackagePage(driver, wait);
+    }
+
     public void clickLanggananSekarangButton(){
         clickButtonByXpath(wait, "(//button[contains(text(),'Langganan Sekarang')])[1]");
     }
-    public String getNamaPaket(){ // To see if the Name matches with what the user chose before
+    public String getNamaPaketDetail(){ // To see if the Name matches with what the user chose before
         return getTextByXpath(wait, "//h1[@class='cover-title animated fadeInUp delayp1']");
     }
     public String getMbpsPaketDetail(){ // To see if the Mbps matches with what the user chose before

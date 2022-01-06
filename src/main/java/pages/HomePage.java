@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,8 +15,8 @@ public class HomePage {
         this.wait = wait;
     }
 
-    public String getIndiHomeLogo(){
-        return getTextByXpath(wait, "//img[@class='navbar-brand-img']");
+    public String getWelcomeMessage(){ // to ensure we are in the right URL
+        return getTextByXpath(wait, "//h3[contains(text(),'Selamat datang di IndiHome!')]");
     }
 
     public InternetPackagePage clickCariPaketButton() throws InterruptedException {
