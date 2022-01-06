@@ -4,7 +4,7 @@
 Hi yall! its me Again!
 
 This time its just a simple assertion focus Automation that I made. 
-I could do more to this Web App becuase most of it needs the login feature which is blocked by Phone Verification :(
+I couldnt do more to this Web App becuase most of it needs the login feature which is blocked by Phone Verification :(
 Yeaah I know it sucks but hope you guys like it!
 
 Anyway, what you will need to run this code will be explained below:
